@@ -61,8 +61,6 @@ Finish time:330
 Actual time needed to complete: 330
 
 
-
-
 Name of feature:  Storage: As a user, I'd like to view the list of books, so that whenever I visit the page, I can see the a full list of best books.
 Estimate of time needed to complete: 1h
 
@@ -71,3 +69,23 @@ Start time: 340
 Finish time: 640
 
 Actual time needed to complete: 3h
+
+
+Name of feature:1. Create: As a user, I'd like to add a new book to the shelf, so that I can update the list with my own recommendations.
+
+Estimate of time needed to complete: 1h
+
+Start time:130
+Finish time: 200
+
+Actual time needed to complete: 30min
+
+
+Name of feature: Delete: As a user, I want to remove books from my list, so that only the most important books are on my shelf.
+
+Estimate of time needed to complete: 1hour
+
+Start time:230
+Finish time: 500
+
+Actual time needed to complete:2h30min

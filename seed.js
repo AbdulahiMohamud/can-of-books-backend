@@ -6,6 +6,7 @@ mongoose.connect(process.env.DB_URL);
 
 const Book = require('./module/book.js');
 
+
 async function seed() {
 
   await Book.create({
