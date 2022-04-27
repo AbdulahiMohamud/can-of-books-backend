@@ -27,9 +27,9 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3001;
 
-app.get('/test', (request, response) => {
+app.get('/', (request, response) => {
 
-  response.send('test request received')
+  response.send('welcome')
 })
 // GET
 app.get('/book', getBook);
