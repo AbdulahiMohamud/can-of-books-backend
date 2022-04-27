@@ -89,3 +89,15 @@ Start time:230
 Finish time: 500
 
 Actual time needed to complete:2h30min
+
+
+
+
+Name of feature: Update: As a user, I want to update book details on my list, so that I can change the book status, or update the book details as I learn more about it.
+
+Estimate of time needed to complete: 1hour
+
+Start time:130
+Finish time: 230
+
+Actual time needed to complete: 1h
