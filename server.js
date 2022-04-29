@@ -5,6 +5,7 @@ const express = require('express');
 const cors = require('cors');
 const Book = require('./module/book.js');
 const req = require ('express/lib/request');
+const verifyUser = require('./auth');
 
 const mongoose = require('mongoose');
 
@@ -42,18 +43,28 @@ app.put('/book/:id', putBook)
 
 
 async function getBook (req,res,next) {
-  try{
+  verifyUser(req, async (err, user) => {
+    if (err) {
+      console.error(err);
+      res.send('invalid token');
+    } else {
     let queryObject = {}
-    if (req.query.title) {
-      queryObject.title = req.query.title;
+    if (req.query.email) {
+      queryObject.email = req.query.email;
     }
-    let results = await Book.find();
-    res.status(200).send(results);
-
-  } catch(err) {
-    next(err);
+    try {
+      const booksFromDb = await Book.find(searchObject);
+      if (booksFromDb.length > 0) {
+        res.status(200).send(booksFromDb);
+      } else {
+        res.status(404).send('error');
+      }
+    } catch (e) {
+      console.error(e);
+      res.status(500).send('server error');
+    }
   }
-
+});
 }
 
 async function postBook(req,res,next){
