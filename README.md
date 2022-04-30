@@ -91,8 +91,6 @@ Finish time: 500
 Actual time needed to complete:2h30min
 
 
-
-
 Name of feature: Update: As a user, I want to update book details on my list, so that I can change the book status, or update the book details as I learn more about it.
 
 Estimate of time needed to complete: 1hour
@@ -101,3 +99,13 @@ Start time:130
 Finish time: 230
 
 Actual time needed to complete: 1h
+
+
+Name of feature: Update:Authentication: As a user, I'd like to sign in with OAuth, so that I can authenticate to the site without creating yet-another username/password combo to potentially get hacked or lost.
+
+Estimate of time needed to complete: 1hour
+
+Start time:200
+Finish time: 230
+
+Actual time needed to complete:30
